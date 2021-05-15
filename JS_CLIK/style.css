@@ -1,0 +1,80 @@
+body{
+    background: rgb(52, 41, 112);
+}
+.div1{
+    border-radius: 3px;
+    margin-top: 100px;
+    margin-left: 600px;
+    background-color: white;
+    width: 250px;
+    height: 150px;
+}
+.div2{
+    display:none;
+    margin-top: -250px;
+    margin-left: -300px;
+    background-color: white;
+    width: 300px; 
+    height: 750px;
+    animation-name: first-div;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+body:active.first-div{
+    animation-play-state:running;
+}
+.div3{
+    display:none;
+    margin-top: -250px;
+    margin-left: 300px;
+    background-color: white;
+    width: 300px; 
+    height: 750px;
+    animation-name:second-div ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+#b1{
+    margin-left: 55px;
+    margin-top: 50px;
+    background-color: rgb(240, 233, 233);
+    border-color: rgb(240, 233, 233);
+    color: black;
+}
+#b2{
+    margin-top: 50px;
+    background-color: rgb(240, 233, 233);
+    border-color: rgb(240, 233, 233);
+    color: black;    
+}
+#b3{
+    
+    margin-left: 115px;
+    background-color: rgb(240, 233, 233);
+    border-color: rgb(240, 233, 233);
+    color: black; 
+}
+#b5{
+    
+    margin-left: 115px;
+    background-color: rgb(240, 233, 233);
+    border-color: rgb(240, 233, 233);
+    color: black; 
+}
+.txt1{
+    padding-top: 300px;
+    margin-left: 70px;
+}
+.txt2{
+    padding-top: 300px;
+    margin-left: 90px;
+}
+
+
+
+
+@keyframes first-div{ from { margin-left:-300px; } to { margin-left:0; } }
+@keyframes second-div{ from { margin-left:-300px; } to { margin-left:0; } }
+
